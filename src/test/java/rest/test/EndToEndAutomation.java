@@ -26,7 +26,7 @@ public class EndToEndAutomation {
 
 	@Test
 	public void CreateJSON(){
-		CreatePost p = new CreatePost();
+		CreatePost p = new CreatePost(); // POJO Class
 		p.setId(1);
 		p.setTitle("Creating");
 		p.setAuthor("AB D");
@@ -61,7 +61,4 @@ public class EndToEndAutomation {
 				Assert.assertEquals(actualStatus, 200);
 			
 	}
-	
-	
-	
 }

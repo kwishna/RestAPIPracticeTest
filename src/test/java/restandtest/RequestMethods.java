@@ -7,6 +7,9 @@ import org.testng.annotations.Test;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+/**
+ * Start json-server
+ */
 public class RequestMethods {
 	
 	@Test(enabled=false)

@@ -1,5 +1,8 @@
 package restandtest;
 
+/**
+ * POJO Class
+ */
 public class CreatePost {
 	//Create As Many Variables In JSON Object
 	/*

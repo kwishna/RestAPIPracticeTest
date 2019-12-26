@@ -18,18 +18,19 @@ public class HttpNet {
 	public static void main(String[] args) throws IOException {
 		
 		URL url = new URL(u);
-		HttpURLConnection http = (HttpURLConnection)url.openConnection();
+		HttpURLConnection http = (HttpURLConnection)url.openConnection(); // Instance Used To Start Connection
 		http.setRequestMethod("GET");
 		http.setRequestProperty("User-Agent", "Mozilla/5.0");
+
+		http.connect(); // Start Connecting..
 		
 		BufferedReader in = new BufferedReader(new InputStreamReader(http.getInputStream()));
 		String si = "";
 		while((si=in.readLine())!=null) {
-//			System.out.println(si);
+			System.out.println(si);
 		}
 		in.close();
-		
-		
+		System.out.println("--------------------------------------------------------------------------------");
 		URL url2 = new URL(google);
 		HttpURLConnection http2 = (HttpURLConnection)url2.openConnection();
 		http2.setRequestMethod("POST");

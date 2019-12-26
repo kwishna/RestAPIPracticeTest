@@ -34,7 +34,7 @@ public class EndToEndAPITest {
 	@Test(priority=1)
 	public void createResource() {
 
-		RandomPost ra = new RandomPost();
+		RandomPost ra = new RandomPost(); // POJO
 		ra.setId(id);
 		ra.setTitle(title);
 		ra.setAuthor(author);

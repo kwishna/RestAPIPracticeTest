@@ -18,7 +18,7 @@ public class HttpNet {
 	public static void main(String[] args) throws IOException {
 		
 		URL url = new URL(u);
-		HttpURLConnection http = (HttpURLConnection)url.openConnection(); // Instance Used To Start Connection
+		HttpURLConnection http = (HttpURLConnection) url.openConnection(); // Instance Used To Start Connection
 		http.setRequestMethod("GET");
 		http.setRequestProperty("User-Agent", "Mozilla/5.0");
 

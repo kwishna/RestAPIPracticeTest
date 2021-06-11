@@ -45,7 +45,7 @@ public class EndToEndAutomation {
 	*/	
 		
 	// To Validate We Need To Take The Response In A ValidateResponse Object.
-		ValidatableResponse res = r.given()
+		ValidatableResponse res = RestAssured.given()
 				.contentType(ContentType.JSON)
 				.body(p) // p is Object Of CreatePost class With Id, title & author set.
 
@@ -54,7 +54,7 @@ public class EndToEndAutomation {
 				
 				.then()
 				.contentType(ContentType.JSON);
-		
+
 				int responseId = res.extract().path("id");
 				int actualStatus = res.extract().response().getStatusCode();
 				
